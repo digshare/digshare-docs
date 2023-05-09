@@ -1,3 +1,3 @@
-# dingshao-docs
+# digshare-docs
 
 Just another awesome magic.
