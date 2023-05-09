@@ -45,6 +45,15 @@ export default defineUserConfig({
           ],
         },
       ],
+      '/terms/': [
+        {
+          text: '协议文本',
+          children: [
+            '/terms/service-agreement.md',
+            '/terms/privacy-agreement.md',
+          ],
+        },
+      ],
     },
   }),
   markdown: {
