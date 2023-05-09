@@ -33,6 +33,8 @@ export default defineUserConfig({
             '/script/getting-started.md',
             '/script/scheduling.md',
             '/script/debugging.md',
+            '/script/state.md',
+            '/script/message.md',
             '/script/demo/',
           ],
         },
