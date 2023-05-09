@@ -1,0 +1,30 @@
+{
+  "Code Group": {
+    "scope": "markdown",
+    "prefix": "cg",
+    "body": [
+      ":::: code-group",
+      "::: code-group-item ${1:label}",
+      "",
+      "```${2:language}",
+      "${0}",
+      "```",
+      "",
+      ":::",
+      "::::"
+    ]
+  },
+  "Code Group Item": {
+    "scope": "markdown",
+    "prefix": "cgi",
+    "body": [
+      "::: code-group-item ${1:label}",
+      "",
+      "```${2:language}",
+      "${0}",
+      "```",
+      "",
+      ":::"
+    ]
+  }
+}

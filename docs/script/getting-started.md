@@ -94,7 +94,7 @@ npx dss deploy
 :::
 
 ::: warning 大小限制
-盯梢脚本部署限制大小为打包后 100kB，超过限制的脚本将无法部署。
+盯梢脚本部署限制大小为打包后 1MB，超过限制的脚本将无法部署。
 :::
 
 ## 执行脚本
@@ -148,7 +148,7 @@ npx dss deploy
 
 部署成功后，脚本就会按照配置的时间自动执行了。
 
-我们提供了常见的脚本类型作为[例子](/script/demo/)，供用户参考复制和修改。
+我们提供了常见的脚本类型作为[示例](/script/examples/)，供用户参考复制和修改。
 
 [node-js]: https://nodejs.org/
 [vs-code]: https://code.visualstudio.com/
