@@ -32,7 +32,7 @@ export default script(async () => {
 - `-` 无序列表。
 - `![alt][0]` 图片。注意图片仅支持通过引用指定，详见下方的 `message.images`。
 
-## message.title <Badge>可选</Badge>
+## message.title <Badge text="可选" vertical="middle" />
 
 除了消息正文外，还可以通过 `message.title` 指定消息标题。注意消息标题是纯文本。
 
@@ -47,7 +47,7 @@ export default script(async () => {
 });
 ```
 
-## message.images <Badge>可选</Badge>
+## message.images <Badge text="可选" vertical="middle" />
 
 脚本可以通过 `message.images` 数组来提供图片，每一个数组元素支持如下类型：
 
@@ -131,7 +131,7 @@ export default script(async () => {
 注意 Markdown 中的图片序号是从 0 开始的，即 `[0]` 是第一张，`[1]` 是第二张，以此类推。
 :::
 
-## message.tags <Badge>可选</Badge>
+## message.tags <Badge text="可选" vertical="middle" />
 
 `message.tags` 是标签数组，可以指定消息标签。如果当前[频道标签](/guide/channel-tags.md)不包含指定的标签，将在发送消息时自动添加。
 

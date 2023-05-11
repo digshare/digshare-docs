@@ -41,6 +41,7 @@ export default defineUserConfig({
             '/script/debugging.md',
             '/script/state.md',
             '/script/message.md',
+            '/script/advanced-usages.md',
             {
               text: '示例',
               children: ['/script/examples/npm-package-new-release.md'],
