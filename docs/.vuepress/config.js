@@ -19,6 +19,10 @@ export default defineUserConfig({
         text: '脚本文档',
         link: '/script/',
       },
+      {
+        text: 'GitHub',
+        link: 'https://github.com/digshare/digshare-docs',
+      },
     ],
     sidebar: {
       '/guide/': [

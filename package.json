@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "author": "Chengdu Enverse Technology Co., Ltd.",
   "scripts": {
+    "dev": "vuepress dev docs",
     "lint": "eslint docs/.vuepress",
     "lint-prettier": "prettier --check .",
     "test": "yarn lint-prettier && yarn lint"
