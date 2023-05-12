@@ -1,5 +1,8 @@
 // @ts-check
 
+import * as Path from 'path';
+
+import {registerComponentsPlugin} from '@vuepress/plugin-register-components';
 import {defaultTheme, defineUserConfig} from 'vuepress';
 import {copyCodePlugin} from 'vuepress-plugin-copy-code2';
 
@@ -28,6 +31,7 @@ export default defineUserConfig({
       '/guide/': [
         {
           text: '用户指南',
+          children: ['/guide/README.md', '/guide/channel-tags.md'],
         },
       ],
       '/script/': [
@@ -66,5 +70,10 @@ export default defineUserConfig({
       lineNumbers: false,
     },
   },
-  plugins: [copyCodePlugin()],
+  plugins: [
+    copyCodePlugin(),
+    registerComponentsPlugin({
+      componentsDir: Path.join(__dirname, 'components'),
+    }),
+  ],
 });

@@ -9,9 +9,10 @@
     "test": "yarn lint-prettier && yarn lint"
   },
   "devDependencies": {
+    "@vuepress/plugin-register-components": "next",
     "eslint": "^8.40.0",
     "prettier": "^2.8.8",
-    "vuepress": "^2.0.0-beta.61",
+    "vuepress": "next",
     "vuepress-plugin-copy-code2": "^2.0.0-beta.208"
   }
 }
