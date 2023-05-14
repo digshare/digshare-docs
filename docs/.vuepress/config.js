@@ -59,7 +59,7 @@ export default defineUserConfig({
           text: '协议文本',
           children: [
             '/terms/service-agreement.md',
-            '/terms/privacy-agreement.md',
+            '/terms/privacy-statement.md',
           ],
         },
       ],
