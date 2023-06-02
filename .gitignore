@@ -4,6 +4,5 @@
 node_modules/
 yarn-error.log
 npm-debug.log
-# VuePress
-.cache/
-.temp/
+# VitePress
+docs/.vitepress/cache/

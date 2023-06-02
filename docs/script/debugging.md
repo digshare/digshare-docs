@@ -28,10 +28,9 @@ npx dss local-run --reset-state
 
 使用 `--debug` 选项将脚本部署到调试环境。该环境不会自动执行脚本，不会覆盖已发布的正式环境脚本，其他行为与正式环境一致。
 
-:::: code-group
-::: code-group-item 使用示例
+::: code-group
 
-```bash
+```bash [使用示例]
 npx dss deploy --debug
 npx dss deploy --debug --run
 npx dss run --debug
@@ -39,7 +38,6 @@ npx dss logs --debug
 ```
 
 :::
-::::
 
 ::: warning 特别注意
 
@@ -52,10 +50,9 @@ npx dss logs --debug
 
 正式环境和调试环境下，都可以使用 `--dry-run` 选项。启用该选项后，脚本不会实际发布消息，也不会更新状态。
 
-:::: code-group
-::: code-group-item 使用示例
+::: code-group
 
-```bash
+```bash [使用示例]
 npx dss deploy --dry-run
 npx dss deploy --dry-run --debug
 npx dss run --dry-run
@@ -63,16 +60,14 @@ npx dss run --dry-run --debug
 ```
 
 :::
-::::
 
 ## 部署后执行
 
 部署脚本后，可以通过 `npx dss run` 执行脚本，也可以在部署时通过 `--run` 或 `--dry-run` 直接执行。
 
-:::: code-group
-::: code-group-item 使用示例
+::: code-group
 
-```bash
+```bash [使用示例]
 npx dss deploy --run
 npx dss deploy --dry-run
 npx dss deploy --debug --run
@@ -80,20 +75,17 @@ npx dss deploy --debug --dry-run
 ```
 
 :::
-::::
 
 ## 查看日志
 
 脚本执行时，会自动拉取日志。如果需要单独查看日志、或需要查看历史日志，则可以使用 `npx dss logs` 命令。
 
-:::: code-group
-::: code-group-item 使用示例
+::: code-group
 
-```bash
+```bash [使用示例]
 npx logs
 npx logs --debug
 npx logs --last=1d
 ```
 
 :::
-::::

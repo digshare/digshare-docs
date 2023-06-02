@@ -58,10 +58,9 @@ export default script(async () => {
 
 以 URL 和 `ReadableStream` 为例：
 
-:::: code-group
-::: code-group-item URL 字符串
+::: code-group
 
-```js
+```js [URL 字符串]
 export default script(async () => {
   return {
     message: {
@@ -76,12 +75,10 @@ export default script(async () => {
 ```
 
 :::
-::::
 
-:::: code-group
-::: code-group-item ReadableStream
+::: code-group
 
-```js
+```js [ReadableStream]
 export default script(async () => {
   const response = await fetch('https://example.com/image.png');
 
@@ -99,7 +96,6 @@ export default script(async () => {
 ```
 
 :::
-::::
 
 `message.images` 中的图片会自动追加到消息正文的末尾。除此之外，还可以通过内联 markdown 语法将图片插入到正文中：
 

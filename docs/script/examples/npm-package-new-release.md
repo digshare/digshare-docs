@@ -1,9 +1,8 @@
 # NPM 包新版本发布
 
-:::: code-group
-::: code-group-item script.js
+::: code-group
 
-```js
+```js [script.js]
 import {script} from '@digshare/script';
 
 export default script(async state => {
@@ -32,10 +31,7 @@ export default script(async state => {
 });
 ```
 
-:::
-::: code-group-item package.json
-
-```json
+```json [package.json]
 {
   "exports": "./script.js",
   "dss": {
@@ -48,4 +44,3 @@ export default script(async state => {
 ```
 
 :::
-::::

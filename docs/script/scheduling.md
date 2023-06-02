@@ -14,10 +14,9 @@
 
 `rate()` 表达式用来指定执行时间间隔，格式可以参考 [ms][ms] 库。
 
-:::: code-group
-::: code-group-item package.json
+::: code-group
 
-```json {3}
+```json [package.json] {3}
 {
   "dss": {
     "schedule": "rate(1h)"
@@ -26,16 +25,14 @@
 ```
 
 :::
-::::
 
 ## cron(...)
 
 `cron()` 表达式用来指定执行时间，格式可以参考 [cron-parser][cron-parser] 库。
 
-:::: code-group
-::: code-group-item package.json
+::: code-group
 
-```json {3}
+```json [package.json] {3}
 {
   "dss": {
     "schedule": "cron(0 9 * * *)"
@@ -44,7 +41,6 @@
 ```
 
 :::
-::::
 
 [ms]: https://www.npmjs.com/package/ms
 [cron-parser]: https://www.npmjs.com/package/cron-parser

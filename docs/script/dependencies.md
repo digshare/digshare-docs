@@ -8,10 +8,9 @@ npm install cheerio
 
 然后即可在脚本中引入：
 
-:::: code-group
-::: code-group-item script.js
+::: code-group
 
-```js
+```js [script.js]
 import * as Cheerio from 'cheerio';
 
 export default script(async () => {
@@ -26,7 +25,6 @@ export default script(async () => {
 ```
 
 :::
-::::
 
 ::: tip 注意
 添加依赖可能会显著增加脚本打包后的大小，如果部署时提示脚本超过大小限制，可以尝试使用 `--minify` 选项压缩代码，或尝试对依赖进行优化。

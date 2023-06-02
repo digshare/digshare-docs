@@ -16,10 +16,9 @@
 
 接下来我们新建一个脚本文件夹，并在文件夹中分别创建以上两个文件，内容如下：
 
-:::: code-group
-::: code-group-item package.json
+::: code-group
 
-```json
+```json [package.json]
 {
   "exports": "./script.js",
   "dependencies": {
@@ -28,13 +27,7 @@
 }
 ```
 
-:::
-::::
-
-:::: code-group
-::: code-group-item script.js
-
-```js
+```js [script.js]
 import {script} from '@digshare/script';
 
 export default script((state = 1) => {
@@ -46,7 +39,6 @@ export default script((state = 1) => {
 ```
 
 :::
-::::
 
 ## 安装依赖
 
@@ -120,13 +112,13 @@ npx dss run
 
 此时我们需要在 `package.json` 文件中添加相应的配置：
 
-:::: code-group
-::: code-group-item package.json
+::: code-group
 
-```json {3-5}
+<!-- prettier-ignore -->
+```json [package.json] {3-5}
 {
   "exports": "./script.js",
-  "dss": {
+  "dss": { // [!code ++:3]
     "schedule": "rate(1h)"
   },
   "dependencies": {
@@ -136,7 +128,6 @@ npx dss run
 ```
 
 :::
-::::
 
 以上配置表示脚本将每隔一小时运行一次，盯梢支持 `rate(...)` 和 `cron(...)` 两种表达式，但实际执行间隔不能低于 30 分钟，配置详情请参考[定时执行](/script/scheduling.md)。
 

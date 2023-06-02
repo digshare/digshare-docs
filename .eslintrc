@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["node_modules/", ".temp/", ".cache/"],
+  "ignorePatterns": ["node_modules/", "docs/.vitepress/cache/"],
   "extends": ["eslint:recommended"],
   "env": {
     "node": true,
