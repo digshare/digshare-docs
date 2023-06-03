@@ -27,6 +27,10 @@
 }
 ```
 
+:::
+
+::: code-group
+
 ```js [script.js]
 import {script} from '@digshare/script';
 
