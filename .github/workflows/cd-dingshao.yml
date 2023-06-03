@@ -9,4 +9,4 @@ jobs:
       PROXY: http://172.16.0.1:8000
     steps:
       - uses: actions/checkout@v3
-      - run: docker compose up --detach --build
+      - run: docker compose up --detach --build --remove-orphans
