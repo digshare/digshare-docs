@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["node_modules/", "docs/.vitepress/cache/"],
+  "ignorePatterns": ["node_modules/", "docs/.vitepress/*/"],
   "extends": ["plugin:@mufan/js", "plugin:@mufan/override-dev"],
   "overrides": [
     {

@@ -5,4 +5,4 @@ node_modules/
 yarn-error.log
 npm-debug.log
 # VitePress
-docs/.vitepress/cache/
+docs/.vitepress/*/

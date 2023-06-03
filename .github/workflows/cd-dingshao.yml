@@ -1,0 +1,12 @@
+name: CD (dingshao)
+on:
+  push:
+    branches: [master]
+jobs:
+  build:
+    runs-on: [self-hosted, dingshao-master]
+    env:
+      PROXY: http://172.16.0.1:8000
+    steps:
+      - uses: actions/checkout@v3
+      - run: docker compose up --detach
