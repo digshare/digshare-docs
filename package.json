@@ -3,12 +3,15 @@
   "version": "0.0.0",
   "author": "Chengdu Enverse Technology Co., Ltd.",
   "scripts": {
-    "lint": "eslint .",
+    "3": "yarn && yarn-deduplicate && yarn",
+    "lint": "eslint --no-error-on-unmatched-pattern .",
     "lint-prettier": "prettier --check .",
     "test": "yarn lint-prettier && yarn lint"
   },
   "devDependencies": {
-    "eslint": "^8.40.0",
-    "prettier": "^2.8.8"
+    "@mufan/eslint-plugin": "^0.1.81",
+    "eslint": "^8.42.0",
+    "prettier": "^2.8.8",
+    "yarn-deduplicate": "^6.0.2"
   }
 }
