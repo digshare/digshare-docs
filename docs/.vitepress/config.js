@@ -8,6 +8,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '盯梢文档',
   description: '快速上手盯梢应用',
+  head: [['link', {rel: 'icon', href: '/images/logo.svg'}]],
   themeConfig: {
     logo: '/images/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
