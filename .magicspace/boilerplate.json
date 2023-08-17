@@ -1,7 +1,9 @@
 {
+  "$schema": "boilerplate.schema.json",
   "boilerplate": "@mufan/code-boilerplates/general",
   "options": {
     "name": "digshare-docs",
-    "author": "Chengdu Enverse Technology Co., Ltd."
+    "author": "Chengdu Enverse Technology Co., Ltd.",
+    "defaultBranch": "master"
   }
 }
