@@ -33,6 +33,7 @@ export default script(async state => {
 
 ```json [package.json]
 {
+  "name": "script",
   "exports": "./script.js",
   "dss": {
     "schedule": "rate(1h)"

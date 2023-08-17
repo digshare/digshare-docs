@@ -20,6 +20,7 @@
 
 ```json [package.json]
 {
+  "name": "script",
   "exports": "./script.js",
   "dependencies": {
     "@digshare/script": "^0.4.0"
@@ -119,8 +120,9 @@ npx dss run
 ::: code-group
 
 <!-- prettier-ignore -->
-```json [package.json] {3-5}
+```json [package.json] {4-6}
 {
+  "name": "script",
   "exports": "./script.js",
   "dss": { // [!code ++:3]
     "schedule": "rate(1h)"
