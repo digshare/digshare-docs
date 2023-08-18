@@ -1,3 +1,7 @@
+<script setup>
+  import {SCRIPT_SDK_VERSION} from '../@variables.js';
+</script>
+
 # 快速上手
 
 ::: tip 注意
@@ -18,12 +22,12 @@
 
 ::: code-group
 
-```json [package.json]
+```json-vue [package.json]
 {
   "name": "script",
   "exports": "./script.js",
   "dependencies": {
-    "@digshare/script": "^0.4.0"
+    "@digshare/script": "^{{SCRIPT_SDK_VERSION}}"
   }
 }
 ```
@@ -128,7 +132,7 @@ npx dss run
     "schedule": "rate(1h)"
   },
   "dependencies": {
-    "@digshare/script": "^0.4.0"
+    "@digshare/script": "0.4"
   }
 }
 ```

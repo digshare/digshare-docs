@@ -1,4 +1,25 @@
+<script setup>
+  import {SCRIPT_SDK_VERSION} from '../../@variables.js';
+</script>
+
 # NPM 包新版本发布
+
+::: code-group
+
+```json-vue [package.json]
+{
+  "name": "script",
+  "exports": "./script.js",
+  "dss": {
+    "schedule": "rate(1h)"
+  },
+  "dependencies": {
+    "@digshare/script": "^{{SCRIPT_SDK_VERSION}}"
+  }
+}
+```
+
+:::
 
 ::: code-group
 
@@ -29,19 +50,6 @@ export default script(async state => {
     state: {latest},
   };
 });
-```
-
-```json [package.json]
-{
-  "name": "script",
-  "exports": "./script.js",
-  "dss": {
-    "schedule": "rate(1h)"
-  },
-  "dependencies": {
-    "@digshare/script": "^0.4.0"
-  }
-}
 ```
 
 :::
