@@ -14,7 +14,7 @@ RUN \
 COPY . .
 
 RUN yarn test
-
+RUN yarn update-variables
 RUN yarn docs:build
 
 EXPOSE 4173

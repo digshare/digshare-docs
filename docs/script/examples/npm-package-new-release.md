@@ -1,5 +1,5 @@
 <script setup>
-  import {SCRIPT_SDK_VERSION} from '../../@variables.js';
+  import {SCRIPT_SDK_VERSION} from '../../variables';
 </script>
 
 # NPM 包新版本发布

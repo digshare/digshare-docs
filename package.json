@@ -2,11 +2,13 @@
   "name": "digshare-docs",
   "version": "0.0.0",
   "author": "Chengdu Enverse Technology Co., Ltd.",
+  "type": "module",
   "scripts": {
     "3": "yarn && yarn-deduplicate && yarn",
     "lint": "eslint docs/.vitepress",
     "lint-prettier": "prettier --check .",
     "test": "yarn lint-prettier && yarn lint",
+    "update-variables": "node scripts/update-variables.js",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"

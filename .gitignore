@@ -6,3 +6,5 @@ node_modules/
 yarn-error.log
 # VitePress
 docs/.vitepress/*/
+# Variables
+docs/variables.json
