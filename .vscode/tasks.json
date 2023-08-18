@@ -2,13 +2,12 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "npm: dev",
       "type": "npm",
-      "script": "dev",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "script": "docs:dev",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: docs:dev",
+      "detail": "vitepress dev docs"
     }
   ]
 }
