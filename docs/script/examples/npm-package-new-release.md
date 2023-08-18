@@ -27,11 +27,9 @@
 import {script} from '@digshare/script';
 
 export default script(async state => {
-  const response = await fetch('https://registry.npmjs.org/typescript');
+  const response = await fetch('https://registry.npmjs.org/typescript/latest');
 
-  const {
-    'dist-tags': {latest},
-  } = await response.json();
+  const {version: latest} = await response.json();
 
   if (!state) {
     // 初始化 state 为当前版本。
