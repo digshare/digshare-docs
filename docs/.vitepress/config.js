@@ -40,6 +40,7 @@ export default defineConfig({
           {text: '状态 State', link: '/script/state.md'},
           {text: '消息 Message', link: '/script/message.md'},
           {text: '高级用法', link: '/script/advanced-usages.md'},
+          {text: '运行环境', link: '/script/runtime-environment.md'},
           {text: '旧版迁移', link: '/script/legacy-migration.md'},
           {
             text: '示例',
