@@ -124,7 +124,7 @@ npx dss run
 ::: code-group
 
 <!-- prettier-ignore -->
-```json [package.json] {4-6}
+```json-vue [package.json] {4-6}
 {
   "name": "script",
   "exports": "./script.js",
@@ -132,7 +132,7 @@ npx dss run
     "schedule": "rate(1h)"
   },
   "dependencies": {
-    "@digshare/script": "0.4"
+    "@digshare/script": "^{{SCRIPT_SDK_VERSION}}"
   }
 }
 ```
