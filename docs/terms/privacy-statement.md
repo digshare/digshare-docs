@@ -5,7 +5,7 @@ editLink: false
 
 # 盯梢隐私声明
 
-隐私政策更新（日期：2023-8-10）
+隐私政策更新（日期：2023-8-24）
 
 ## 产品介绍
 
@@ -180,6 +180,15 @@ Cookie 是一种网络服务器存储在计算机或移动设备上的纯文本�
 - 收集个人信息类型：
   - 设备信息（IMEI/MAC/Android ID/IDFA/OAID/OpenUDID/GUID/SIM 卡 IMSI 信息等）：用于识别唯一用户，这些数据是匿名的，没有和用户信息关联。
   - 网络信息与位置信息（IP 地址，WiFi 信息，基站信息等相关信息）：用于分析用户行为，以提供更优质的服务。
+- 隐私政策链接：https://firebase.google.com/support/privacy
+
+### Capacitor Sentry SDK
+
+- 使用目的：收集应用报错和崩溃信息
+- 可能调用的权限：
+  - 获取设备传感器
+  - 读写设备存储
+- 隐私政策链接：https://sentry.io/privacy/
 
 ## 我们会如何处理未成年人的个人信息
 
