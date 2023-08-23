@@ -182,13 +182,19 @@ Cookie 是一种网络服务器存储在计算机或移动设备上的纯文本�
   - 网络信息与位置信息（IP 地址，WiFi 信息，基站信息等相关信息）：用于分析用户行为，以提供更优质的服务。
 - 隐私政策链接：https://firebase.google.com/support/privacy
 
-### Capacitor Sentry SDK
+### Sentry (Capacitor) SDK
 
 - 使用目的：收集应用报错和崩溃信息
 - 可能调用的权限：
   - 获取设备传感器
+  - 获取安装列表
   - 读写设备存储
 - 隐私政策链接：https://sentry.io/privacy/
+
+### Capacitor 框架
+
+- 使用目的：提供跨平台的原生功能
+- 可能调用的权限：Capacitor 仅作为跨平台混合应用框架使用，由盯梢主动调用原生功能
 
 ## 我们会如何处理未成年人的个人信息
 
