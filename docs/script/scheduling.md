@@ -1,9 +1,16 @@
+<script setup>
+  import {SCRIPT_SCHEDULE_MIN_INTERVAL, SCRIPT_TIME_QUOTA} from '../constants';
+</script>
+
 # 定时执行
 
 盯梢脚本支持两种定时执行的方式：`rate` 和 `cron`。在 `package.json` 文件中的 `dss` 字段中添加 `schedule` 字段，指定定时执行的方式和时间。
 
-::: warning 频率限制
-注意目前盯梢脚本定时执行的时间间隔最小为 30 分钟，低于该时间间隔的脚本将无法部署。
+::: warning 频率和时间限制
+
+- 定时执行的时间间隔最小为 {{SCRIPT_SCHEDULE_MIN_INTERVAL}}，低于该时间间隔的脚本将无法部署。
+- 定时执行的脚本最近 24 小时内执行总时间不能超过 {{SCRIPT_TIME_QUOTA}}。
+
 :::
 
 ::: tip 部署相关

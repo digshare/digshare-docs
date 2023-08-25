@@ -1,3 +1,7 @@
+<script setup>
+  import {SCRIPT_STATE_MAX_SIZE} from '../constants';
+</script>
+
 # 状态 State
 
 盯梢脚本提供了一个状态对象用于储存脚本执行过程中产生的需要持久化的数据：
@@ -46,7 +50,7 @@ export default script(async ({handled} = {handled: []}) => {
 ```
 
 ::: warning 序列化和大小限制
-状态对象将会被序列化为 JSON 后传输，请确保对应的值可以被正确序列化。同时，状态对象被序列化为 JSON 字符串并进行 utf-8 编码后，大小不能超过 100kB。
+状态对象将会被序列化为 JSON 后传输，请确保对应的值可以被正确序列化。同时，状态对象被序列化为 JSON 字符串并进行 utf-8 编码后，大小不能超过 {{SCRIPT_STATE_MAX_SIZE}}。
 
 介于一般只需要储存最近的数据用于去重，当记录数量很大时，可以考虑移除最早的数据。
 :::

@@ -1,4 +1,8 @@
 <script setup>
+  import {
+    SCRIPT_SCHEDULE_MIN_INTERVAL,
+    SCRIPT_CODE_MAX_SIZE
+  } from '../constants';
   import {SCRIPT_SDK_VERSION} from '../variables';
 </script>
 
@@ -95,7 +99,7 @@ npx dss deploy
 :::
 
 ::: warning 大小限制
-盯梢脚本部署限制大小为打包后 1MB，超过限制的脚本将无法部署。
+盯梢脚本部署限制大小为打包后 {{SCRIPT_CODE_MAX_SIZE}}，超过限制的脚本将无法部署。
 :::
 
 ## 执行脚本
@@ -139,7 +143,7 @@ npx dss run
 
 :::
 
-以上配置表示脚本将每隔一小时运行一次，盯梢支持 `rate(...)` 和 `cron(...)` 两种表达式，但实际执行间隔不能低于 30 分钟，配置详情请参考[定时执行](/script/scheduling.md)。
+以上配置表示脚本将每隔一小时运行一次，盯梢支持 `rate(...)` 和 `cron(...)` 两种表达式，但实际执行间隔不能低于 {{SCRIPT_SCHEDULE_MIN_INTERVAL}}，配置详情请参考[定时执行](/script/scheduling.md)。
 
 配置完成后，别忘了执行命令，将脚本部署到服务器上：
 
