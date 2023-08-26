@@ -8,7 +8,26 @@ export default defineConfig({
   lang: 'zh-CN',
   title: '盯梢文档',
   description: '快速上手盯梢应用',
-  head: [['link', {rel: 'icon', href: '/images/logo.svg'}]],
+  head: [
+    ['link', {rel: 'icon', href: '/images/logo.svg'}],
+    [
+      'script',
+      {
+        async: '',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-HD5ZM67WNQ',
+      },
+    ],
+    [
+      'script',
+      {},
+      `\
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HD5ZM67WNQ');
+`,
+    ],
+  ],
   themeConfig: {
     logo: '/images/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
