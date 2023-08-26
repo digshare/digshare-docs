@@ -65,6 +65,10 @@ gtag('config', 'G-HD5ZM67WNQ');
             text: '示例',
             items: [
               {
+                text: '盯梢脚本集',
+                link: '/script/examples/digshare-scripts.md',
+              },
+              {
                 text: 'NPM 包新版本发布',
                 link: '/script/examples/npm-package-new-release.md',
               },
