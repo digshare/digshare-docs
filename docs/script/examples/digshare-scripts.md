@@ -2,7 +2,7 @@
 
 > 以下脚本基本为 TypeScript 编写。
 
-- [Webhook 消息](https://github.com/digshare-scipts/webhook-message)
+- [Webhook 消息](https://github.com/digshare-scripts/webhook-message)
 - [雪球用户自选股票更新](https://github.com/digshare-scripts/xueqiu-stock-picks)
 - [V2EX 爆贴推送](https://github.com/digshare-scripts/v2ex-trending)
 - [GitHub 中文项目趋势](https://github.com/digshare-scripts/github-trending-chinese-projects)

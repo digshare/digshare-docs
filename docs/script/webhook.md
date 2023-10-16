@@ -2,6 +2,8 @@
 
 盯梢支持通过 webhook 调用脚本，支持调用参数（query string 和 body）和设定返回内容。
 
+参考例子：https://github.com/digshare-scripts/webhook-message
+
 ## 获取 webhook
 
 ```sh
