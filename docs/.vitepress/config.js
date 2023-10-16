@@ -56,6 +56,7 @@ gtag('config', 'G-HD5ZM67WNQ');
           {text: '定时执行', link: '/script/scheduling.md'},
           {text: '添加依赖', link: '/script/dependencies.md'},
           {text: '调试脚本', link: '/script/debugging.md'},
+          {text: 'Webhook', link: '/script/webhook.md'},
           {text: '状态 State', link: '/script/state.md'},
           {text: '消息 Message', link: '/script/message.md'},
           {text: '高级用法', link: '/script/advanced-usages.md'},
