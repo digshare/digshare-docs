@@ -16,30 +16,3 @@ const data = await load('https://api.example.com/list', 'json');
 // 获取流
 const stream = await load('https://example.com/image.png');
 ```
-
-## 签名
-
-```ts
-type LoadOptions = {
-  /**
-   * 尝试次数，默认为 3。
-   */
-  attempts?: number;
-  /**
-   * 尝试间隔（毫秒），默认为 1000。
-   */
-  attemptInterval?: number;
-} & RequestInit;
-
-type LoadType = 'text' | 'json' | 'blob' | 'arrayBuffer';
-
-declare function load(
-  input: NodeJS.fetch.RequestInfo,
-  options?: LoadOptions,
-): Promise<ReadableStream>;
-declare function load<TType extends LoadType>(
-  input: NodeJS.fetch.RequestInfo,
-  type: TType,
-  options?: LoadOptions,
-): Promise<Awaited<ReturnType<Response[TType]>>>;
-```
