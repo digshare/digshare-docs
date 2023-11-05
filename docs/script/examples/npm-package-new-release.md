@@ -24,12 +24,13 @@
 ::: code-group
 
 ```js [script.js]
-import {script} from '@digshare/script';
+import {script, load} from '@digshare/script';
 
 export default script(async state => {
-  const response = await fetch('https://registry.npmjs.org/typescript/latest');
-
-  const {version: latest} = await response.json();
+  const {version: latest} = await load(
+    'https://registry.npmjs.org/typescript/latest',
+    'json',
+  );
 
   if (!state) {
     // 初始化 state 为当前版本。

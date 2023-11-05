@@ -63,6 +63,16 @@ gtag('config', 'G-HD5ZM67WNQ');
           {text: '运行环境', link: '/script/runtime-environment.md'},
           {text: '旧版迁移', link: '/script/legacy-migration.md'},
           {
+            text: '工具箱',
+            items: [
+              {
+                text: 'load()',
+                link: '/script/utils/load.md',
+              },
+            ],
+            collapsed: true,
+          },
+          {
             text: '示例',
             items: [
               {
