@@ -73,3 +73,21 @@ export default script(() => {
   };
 });
 ```
+
+## 异步 webhook
+
+盯梢脚本 webhook 默认会等待脚本执行结果，这可能需要 2~3 秒的时间。如果你不关心盯梢脚本响应内容以及是否成功执行，可以使用异步 webhook：在原有 webhook 后加上 `/async` 即可。
+
+如，原有 webhook 为：
+
+```
+https://www.dingshao.cn/webhook/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+```
+
+则异步 webhook 为：
+
+```
+https://www.dingshao.cn/webhook/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/async
+```
+
+异步 webhook 将始终响应 200 状态码和空内容。
